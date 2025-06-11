@@ -2,9 +2,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { TARGET_AUDIENCE_DATA, WHAT_TO_EXPECT_DATA, FAQ_DATA, SERVICES_MAIN_DATA, COMPANY_NAME, CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE, type InfoCardItem, type FaqItem, type ServiceDetail } from '@/lib/constants';
+import {
+  TARGET_AUDIENCE_DATA,
+  WHAT_TO_EXPECT_DATA,
+  FAQ_DATA,
+  SERVICES_MAIN_DATA,
+  COMPANY_NAME,
+  CONTACT_EMAIL,
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE,
+  type InfoCardItem,
+  type FaqItem,
+  type ServiceDetail
+} from '@/lib/constants';
 import { CheckCircle, ChevronRight, Mail, Phone, Users, Briefcase, BookOpen, Target, Lightbulb, Settings, Smile, HelpCircle, MessageSquare, ShieldCheck, Zap } from 'lucide-react';
 
 function NewHeroSection() {
