@@ -1,10 +1,12 @@
+
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import { COMPANY_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'AIMinds Revitalize',
-  description: 'Revitalized AI Marketing Minds website',
+  title: COMPANY_NAME,
+  description: `Praktische AI trainingen en marketingondersteuning door ${COMPANY_NAME}`,
 };
 
 export default function RootLayout({

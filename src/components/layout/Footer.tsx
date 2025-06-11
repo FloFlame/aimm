@@ -1,6 +1,7 @@
+
 import Link from 'next/link';
-import { NAV_LINKS, type NavLink } from '@/lib/constants';
-import { Brain } from 'lucide-react';
+import { NAV_LINKS, COMPANY_NAME, CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE, type NavLink } from '@/lib/constants';
+import { Brain, Mail, Phone } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,10 +12,10 @@ export function Footer() {
           <div>
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <Brain className="h-8 w-8 text-primary" />
-              <span className="font-bold text-xl font-headline text-primary">AIMinds Revitalize</span>
+              <span className="font-bold text-xl font-headline text-primary">{COMPANY_NAME}</span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              AI-gedreven marketingoplossingen voor meetbare resultaten.
+              Praktische AI-oplossingen voor jouw werk.
             </p>
           </div>
           <div>
@@ -32,15 +33,23 @@ export function Footer() {
           <div>
             <h3 className="text-md font-semibold text-foreground mb-4">Contacteer Ons</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Email: <a href="mailto:info@aiminds.nl" className="hover:text-primary">info@aiminds.nl</a></li>
-              <li>Telefoon: <a href="tel:+31123456789" className="hover:text-primary">+31 123 456 789</a></li>
+              <li className="flex items-center">
+                <Mail className="h-4 w-4 mr-2 text-primary/80" />
+                <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-primary">{CONTACT_EMAIL}</a>
+              </li>
+              <li className="flex items-center">
+                <Phone className="h-4 w-4 mr-2 text-primary/80" />
+                <a href={`tel:${CONTACT_PHONE}`} className="hover:text-primary">{CONTACT_PHONE_DISPLAY}</a>
+              </li>
+              {/* Add address if available
               <li>Adres: Voorbeeldstraat 123, Amsterdam</li>
+              */}
             </ul>
           </div>
         </div>
         <div className="mt-12 border-t border-border/40 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            &copy; {currentYear} AIMinds Revitalize. Alle rechten voorbehouden.
+            &copy; {currentYear} {COMPANY_NAME}. Alle rechten voorbehouden.
           </p>
         </div>
       </div>
