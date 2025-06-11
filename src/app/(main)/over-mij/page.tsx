@@ -18,7 +18,7 @@ export default function OverMijPage() {
             width={150}
             height={150}
             className="rounded-full mx-auto shadow-lg"
-            data-ai-hint="professional woman"
+            data-ai-hint="woman laughing"
           />
         </div>
         <h1 className="text-3xl md:text-4xl font-bold font-headline mb-4">
