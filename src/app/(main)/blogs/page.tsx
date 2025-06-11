@@ -1,30 +1,37 @@
 
-// Placeholder page for Blogs
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 
-// Sample blog post structure
 const sampleBlogPosts = [
   {
     id: 'blog1',
-    title: 'De Toekomst van AI in Marketing: Trends voor 2025',
-    date: '15 Juli 2024',
-    excerpt: 'Ontdek de belangrijkste AI-trends die marketingprofessionals in de gaten moeten houden voor het komende jaar...',
+    title: 'Slimmer werken met ChatGPT, zónder dat het je extra tijd kost',
+    date: '1 Oktober 2024',
+    excerpt: 'Ontdek hoe je ChatGPT naast je dagelijkse werk gebruikt, zónder dat het voelt als ‘weer een extra tool’. Bespaar tijd en frustratie.',
     imageUrl: 'https://placehold.co/600x400.png',
-    imageAiHint: 'futuristic technology',
-    slug: '/blogs/toekomst-van-ai-in-marketing',
+    imageAiHint: 'person computer',
+    slug: '/blogs/slimmer-werken-met-chatgpt',
   },
   {
     id: 'blog2',
-    title: 'ChatGPT Praktisch Inzetten: 5 Concrete Voorbeelden',
-    date: '1 Augustus 2024',
-    excerpt: 'Leer hoe je ChatGPT en vergelijkbare tools direct kunt toepassen in je dagelijkse marketingtaken voor meer efficiëntie...',
+    title: 'Zelf een GPT bouwen? Dit is waarom iedereen het straks doet (en jij nú moet beginnen)',
+    date: '15 September 2024',
+    excerpt: 'Sinds GPT-4o is zelf een GPT bouwen toegankelijk voor iedereen. Ontdek de voordelen en hoe je begint.',
     imageUrl: 'https://placehold.co/600x400.png',
-    imageAiHint: 'person using laptop',
-    slug: '/blogs/chatgpt-praktisch-inzetten',
+    imageAiHint: 'robot brain',
+    slug: '/blogs/zelf-een-gpt-bouwen',
+  },
+  {
+    id: 'blog3',
+    title: 'Wat is Kunstmatige Intelligentie (AI) en wat kun jij ermee?',
+    date: '1 September 2024',
+    excerpt: 'Een helder overzicht van AI, hoe het werkt, en de praktische toepassingen in jouw werk of bedrijf, zonder technische poespas.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    imageAiHint: 'abstract network',
+    slug: '/blogs/wat-is-kunstmatige-intelligentie',
   },
 ];
 
