@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { ArrowLeft, Mail } from 'lucide-react';
 import { CONTACT_EMAIL } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 export default function SlimmerWerkenMetChatGptPage() {
   return (
@@ -22,7 +23,7 @@ export default function SlimmerWerkenMetChatGptPage() {
               width={800}
               height={400}
               className="rounded-lg shadow-md object-cover w-full"
-              data-ai-hint="person computer interface"
+              data-ai-hint="interface computer"
             />
           </div>
           
@@ -77,15 +78,21 @@ export default function SlimmerWerkenMetChatGptPage() {
           <h2>Conclusie: je hoeft geen expert te zijn om tijd te winnen met AI</h2>
           <p>Je hoeft ChatGPT niet “te snappen”. Je hoeft het alleen slim in te zetten in je werk. En dát is precies waar ik je bij help.</p>
 
-          <div className="mt-10 p-6 bg-secondary rounded-lg text-center">
-            <h3 className="text-xl font-semibold mb-3">Wil je leren hoe je ChatGPT praktisch integreert in jouw werkdag?</h3>
-            <Button asChild>
-              <a href={`mailto:${CONTACT_EMAIL}`}>
-                <Mail className="mr-2 h-5 w-5" /> Stuur een mail
-              </a>
-            </Button>
-            <p className="text-sm text-muted-foreground mt-2">en ik laat je zien hoe makkelijk en effectief het kan zijn.</p>
-          </div>
+          <Card className="mt-12 shadow-lg border-border">
+            <CardHeader>
+              <CardTitle className="text-xl font-semibold font-headline text-primary text-center">Wil je leren hoe je ChatGPT praktisch integreert in jouw werkdag?</CardTitle>
+            </CardHeader>
+            <CardContent className="flex flex-col items-center space-y-3">
+              <Button asChild size="lg">
+                <a href={`mailto:${CONTACT_EMAIL}`}>
+                  <Mail className="mr-2 h-5 w-5" /> Stuur een mail
+                </a>
+              </Button>
+              <p className="text-sm text-muted-foreground text-center max-w-md">
+                en ik laat je zien hoe makkelijk en effectief het kan zijn.
+              </p>
+            </CardContent>
+          </Card>
         </article>
       </div>
     </div>
